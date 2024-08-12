@@ -8,6 +8,7 @@ class ListandoFotografias(admin.ModelAdmin):
     list_display_links = ('id', 'nome') # Define quais campos serão clicáveis na listagem de fotografias no painel administrativo
     search_fields = ('nome',) # Define quais campos serão pesquisáveis na listagem de fotografias no painel administrativo
     list_filter = ('categoria',) # Define quais campos serão filtráveis na listagem de fotografias no painel administrativo
+    list_editable = ('publicada',) # Define quais campos serão editáveis diretamente na listagem de fotografias no painel administrativo
     list_per_page = 15 # Define quantos registros serão exibidos por página na listagem de fotografias no painel administrativo
 
 admin.site.register(Fotografia, ListandoFotografias) # Registra o modelo Fotografia no painel administrativo do Django

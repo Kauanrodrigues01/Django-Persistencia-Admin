@@ -5,7 +5,7 @@ from galeria.models import Fotografia
 
 
 def index(request):
-    fotografias = Fotografia.objects.all() # Busca todas as fotografias no banco de dados
+    fotografias = Fotografia.objects.filter(publicada=True) # Busca todas as fotografias no banco de dados
     return render(request, 'galeria/index.html', {'cards': fotografias}) # Renderiza o arquivo index.html
 
 def imagem(request, foto_id):
