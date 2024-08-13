@@ -11,4 +11,4 @@ class ListandoFotografias(admin.ModelAdmin):
     list_editable = ('publicada',) # Define quais campos serão editáveis diretamente na listagem de fotografias no painel administrativo
     list_per_page = 15 # Define quantos registros serão exibidos por página na listagem de fotografias no painel administrativo
 
-admin.site.register(Fotografia, ListandoFotografias) # Registra o modelo Fotografia no painel administrativo do Django
+admin.site.register(Fotografia, ListandoFotografias) # Registra o modelo Fotografia no painel administrativo do Django, passando a classe ListandoFotografias como parâmetro para personalizar a listagem de fotografias no painel administrativo

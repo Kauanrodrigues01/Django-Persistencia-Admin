@@ -127,6 +127,11 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static') # STATIC_ROOT é o local onde os arquivos estáticos coletados serão armazenados
 
+# Media files (Images)
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # MEDIA_ROOT é o local onde os arquivos de mídia enviados serão armazenados
+
+MEDIA_URL = '/media/' # MEDIA_URL é o URL que será usado para servir arquivos de mídia
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
