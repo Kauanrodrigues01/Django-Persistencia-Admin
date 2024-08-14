@@ -9,7 +9,7 @@ def index(request):
     return render(request, 'galeria/index.html', {'cards': fotografias}) # Renderiza o arquivo index.html
 
 def imagem(request, foto_id):
-    fotografia = get_object_or_404(Fotografia, pk=foto_id) # Busca a fotografia no banco de dados
+    fotografia = get_object_or_404(Fotografia, pk=foto_id) # Busca a fotografia no banco de dados pelo id
     return render(request, 'galeria/imagem.html', {'fotografia': fotografia}) # Renderiza o arquivo imagem.html e passa a fotografia como contexto para o template HTML, que será acessível através da variável fotografia
 
 def buscar(request):

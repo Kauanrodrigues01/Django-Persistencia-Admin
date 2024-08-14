@@ -2,7 +2,7 @@ from django.db import models
 import datetime
 
 # Create your models here.
-class Fotografia(models.Model): # Define a classe fotografia, que herda de models.Model, models.Model é uma classe do Django que define um modelo de banco de dados.
+class Fotografia(models.Model):
     OPCOES_CATEGORIA = [
         ('NEBULOSA', 'Nebulosa'),
         ('GALÁXIA', 'Galáxia'),
