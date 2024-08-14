@@ -1,15 +1,5 @@
 # Alura Space
 
-## Pré-requisitos
-
-Antes de começar, certifique-se de que você tem os seguintes pré-requisitos:
-
-- [Python](https://www.python.org/downloads/) (versão X.X ou superior)
-- [Pip](https://pip.pypa.io/en/stable/) (gerenciador de pacotes do Python)
-- [Virtualenv](https://virtualenv.pypa.io/en/latest/) (opcional, mas recomendado)
-- [Git](https://git-scm.com/) (para clonar o repositório)
-- [python-dotenv](https://pypi.org/project/python-dotenv/) (para gerenciar variáveis de ambiente a partir de um arquivo `.env`)
-
 ## Instalação
 
 Siga estas etapas para configurar o projeto localmente:
